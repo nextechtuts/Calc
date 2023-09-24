@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00063A"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="DATE"
+        android:textAlignment="textEnd"
+        android:textAllCaps="true"
+        android:textColor="#9AE4E4F8"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/currentDateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        android:paddingEnd="16dp"
+        android:textAlignment="textEnd"
+        android:textAllCaps="true"
+        android:textColor="#9AE4E4F8"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/jumpingText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Happy Birthday to You"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/ageTextView"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#031043"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:textColor="#03C4F4"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="30dp"
+        android:text="Enter your Date of Birth:"
+        android:textColor="#F4F4F4"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:theme="@style/DatePickerTheme"
+        android:visibility="visible" />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:onClick="calculateAge"
+        android:text="Calculate age"
+        android:background="#fff"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:background="#010122"
+        android:gravity="center"
+        android:text="AGE CALCULATOR"
+        android:textColor="#BAE9EF"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

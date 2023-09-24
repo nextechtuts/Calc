@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#171717"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="#131313"
+        android:gravity="center"
+        android:text="GST CALCULATOR"
+        android:textColor="#0266FA"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textTotalTax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="#1B1A1A"
+        android:padding="20dp"
+        android:text="Total Tax: "
+        android:textColor="#fff"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textCGST"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1B1A1A"
+        android:padding="20dp"
+        android:text="CGST: "
+        android:textColor="#fff"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textSGST"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1B1A1A"
+        android:padding="20dp"
+        android:text="SGST: "
+        android:textColor="#fff"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/editBaseAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:hint="Enter Base Amount"
+        android:inputType="numberDecimal"
+        android:padding="20dp"
+        android:textColor="#fff"
+        android:textColorHint="#0266FA" />
+
+    <EditText
+        android:id="@+id/editCGSTRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter CGST Rate (%)"
+        android:inputType="numberDecimal"
+        android:padding="20dp"
+        android:textColor="#fff"
+        android:textColorHint="#0266FA" />
+
+    <EditText
+        android:id="@+id/editSGSTRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter SGST Rate (%)"
+        android:inputType="numberDecimal"
+        android:padding="20dp"
+        android:textColor="#fff"
+        android:textColorHint="#0266FA" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#131313"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:text="Calculate"
+        android:textColor="#0266FA"
+        android:textSize="20dp" />
+
+</LinearLayout>
+

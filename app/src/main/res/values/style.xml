@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DatePickerTheme">
+        <!-- Customize text color for the header -->
+        <item name="android:textColorPrimary">@color/your_header_text_color</item>
+
+        <!-- Customize text color for the numbers -->
+        <item name="android:textColorPrimaryInverse">@color/your_numbers_text_color</item>
+    </style>
+</resources>
